@@ -10,11 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Nuevo Proyecto de Juego"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/name="sonido-ProyectoJuego"
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
-[rendering]
+[audio]
 
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
+buses/default_bus_layout="uid://8pb55fhhtcii"
