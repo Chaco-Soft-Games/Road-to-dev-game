@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://b17dd13xa0f3i"]
+
+[ext_resource type="AudioStream" uid="uid://8pb55fhhtcii" path="res://Audio/musica_menu_carga/musica_menu.ogg" id="1_43dpk"]
+[ext_resource type="Script" uid="uid://dqog5c7d014q" path="res://Audio/scripts/musica_carga.gd" id="2_uukss"]
+[ext_resource type="AudioStream" uid="uid://dhrkojylky6vv" path="res://Audio/pasos_en_pasto/pasos_pasto.wav" id="3_i84i0"]
+[ext_resource type="Script" uid="uid://bxdmywbay5b6a" path="res://Audio/scripts/pasos_pastoGDs.gd" id="4_150o5"]
+
+[node name="AudioManager" type="Node2D"]
+
+[node name="Musica_Carga" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_43dpk")
+script = ExtResource("2_uukss")
+
+[node name="Pasos_Pasto" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_i84i0")
+script = ExtResource("4_150o5")
